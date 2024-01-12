@@ -4,7 +4,7 @@ git add [FileName]   (добавить/обновить файл на локал
 git status  (статус)
 git commit -m "Some msg"   (создания комита)
 		-a (все вайлы)
-git restore [FileName] (откат изменений без комита)
+git restore [FileName] (откат изменений)
 git push   (отправка комитов в репозиторий)
 
 cat [FileName]       (содержимое файла на локалке)
