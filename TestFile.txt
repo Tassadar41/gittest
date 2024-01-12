@@ -1,5 +1,5 @@
 test data
-
+тут был конфликт
 next test data
 
 third test data
