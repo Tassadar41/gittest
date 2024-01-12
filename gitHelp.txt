@@ -1,9 +1,10 @@
-
+git clone [httpLink]
 
 git add [FileName]   (добавить/обновить файл на локалке)
-git status  (статус репозитория)
+git status  (статус)
 git commit -m "Some msg"   (создания комита)
 		-a (все вайлы)
+git restore [FileName] (откат изменений без комита)
 git push   (отправка комитов в репозиторий)
 
 cat [FileName]       (содержимое файла на локалке)
