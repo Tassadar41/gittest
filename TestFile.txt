@@ -10,3 +10,5 @@ commit test
 
 git stashtest
 new branch line
+
+new line for gui
