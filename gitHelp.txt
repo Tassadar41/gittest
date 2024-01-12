@@ -1,0 +1,65 @@
+
+
+git add [FileName]   (добавить/обновить файл на локалке)
+git status  (статус репозитория)
+git commit -m "Some msg"   (создания комита)
+		-a (все вайлы)
+git push   (отправка комитов в репозиторий)
+
+cat [FileName]       (содержимое файла на локалке)
+ls (содержимое котолога)
+touch [newFileName]  (создать новый файл)
+
+git fetch (синхронизация с репозиторием на сервере) после использовать git status можно увидеть текущий статус 
+git fetch origin [branch_name] (подтянуть ветку) и потом checkout перейти в неё для коректного отображения
+
+git pull (залить обновления с сервера на локальный репозиторий)
+
+
+git log
+git log --author [AuthorName]
+
+git show [commit hash code]
+git show  (показывает последний комит)
+
+git blame [FileName] (показывает кто вносил изменения в файл)
+git blame [FileName] | grep [string that search] (ищем кто в той или инной строке сделал изменения)
+git blame [FileName] | grep [AuthorName] (ищем изменения от автора)
+
+echo "[add data row]" >> [FileName]  (добавить строку в файл (можно создать новый файл если такого файла нет))
+
+git diff (показать разницу)
+
+git reset HEAD~1 (откотить на 1 комит)
+
+git merge --abort (удаляет информацию о изменениях)
+
+git checkout [FileName] (откат изменения в файле)
+git checkout -  (вернуться в мастера)
+git checkout .  (откатывает все файлы)
+
+git stash      (прячем в локальное хранилище )
+git stash pop  (возвращаем из локального хранилища)
+git stash clear (чистим кэш)
+
+git branch [branchName] (создание ветки)
+git branch (показать список веток)
+git branch -d [branch_name] (удаление ветки с локального репозитория)
+git branch -m [first_branch_name] [second_branch_name]  (переименовка веток)
+						если там были файлы с изменения то нужно удалить старую
+						ветку командой ниже и связать с новой командой ниже 
+
+git push -u origin first_branch (связать ветки) 
+git push origin :[branchName] (удаление ветки) 
+
+git merge [branchName] (влить ветку)  чтоб завершить мердж git push
+
+
+если git push проваливаеться
+ 	попробывать git pull если он тоже
+		то файл обновилься и там будут оба варианта удаляем что надо ручками и делаем
+		git add [FileName] потом git commit -m "[some msg]" и git push
+
+
+git gui&
+gitk& (git история с gui)
